@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap project </title>
+    <!-- bootstrap css-->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!--icons  -->
+     <link rel="stylesheet" href="css/all.css">
+    <!-- css -->
+     <link rel="stylesheet" href="css/style.css">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md h-30 fixed-top">
+  <div class="container-fluid">
+
+    <a class="navbar-brand "  href="#"><img src="images/WhatsApp Image 2025-09-22 at 22.31.22_6057566d.jpg" alt="" class="logo-img mx-2">Dior Perfumes<span class="border-end border-dark h-800 mx-2" ></span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a  class="nav-link px-3 border-transparent rounded hover-border active"  aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 border-transparent rounded hover-border" href="#">Collections</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link px-3 border-transparent rounded hover-border dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">For Men</a></li>
+            <li><a class="dropdown-item" href="#">For Women</a></li>
+            <li><a class="dropdown-item" href="#">Unisex</a></li>
+            <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+            <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+            <li><a class="dropdown-item" href="#">Offers</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 border-transparent rounded hover-border" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 border-transparent rounded hover-border" href="#">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2 my-input" type="search" placeholder="Search " aria-label="Search"/>
+        <button class="search-btn btn btn-warning" type="submit" style="width: 100px;">Logout</button>
+      </form>
+  <!-- زرار في الناف بار يفتح المودال -->
+ <nav class="navbar navbar-expand-lg  ">
+   <div class="container-fluid">
+     <button class="modal-btn1 btn " data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+   </div>
+ </nav>
+ </nav>
+<!-- المودال (الفورم) -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-light">
+      <!-- الهيدر -->
+      <div class="modal-header">
+        <h5 class="modal-title text text-warning " id="loginModalLabel" style="font-size: 30px;">Login</h5>
+        <button type="button" class=" xbtn1 btn-close bg-warning" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- البودي -->
+      <div class="modal-body">
+        <form>
+          <div class="modalbox mb-3">
+            <label for="email" class="form-label text ">Email address</label>
+            <input type="email" class="form-control text text-outline-warning" id="email" placeholder="Enter Your Email">
+          </div><!-- /modalbox mb-3 -->
+          <div class="modalbox mb-3">
+            <label for="password" class="form-label text ">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter Password">
+          </div><!-- /modalbox mb-3 -->
+          <div class="modalbox mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1 text text-warning">Remember me</label>
+          </div><!-- /modalbox mb-3 -->
+          <button type="submit" class="btn2 btn btn-warning w-100" data-bs-dismiss="modal">Log in</button>
+        </form>
+     </div>
+   </div>
+  </div>
+
+    </header><!-- header -->
+    <main>
+          <section class="section1">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active bg-warning"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"class=" bg-warning"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"class=" bg-warning"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"class=" bg-warning"></button>
+          </div>
+          <!-- The slideshow/carousel -->
+          <div id="x1" class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="images/IMG-20250922-WA0212.jpg" class="d-block w-100 carousel-img" style=" height:100vh; object-fit:contain " alt="Los Angeles">
+                  <div class="carousel-caption  bg-dark bg-opacity-50 p-4 w-800 rounded">
+                    <h5 class="carousel-title1 fw-bold text-warning">FUN AWAY GOLD</h5>
+                    <p class="section1-p">A fragrance that embodies pure luxury.
+                      With its rich oriental notes and a modern twist, it creates an unforgettable aura.
+                      Warm, deep, and long-lasting — RUNWAY GOLD leaves a trail of confidence and elegance wherever you go.</p>
+                    <a href="#" class="btn  btn-outline-warning">Buy Now</a>
+                  </div>
+              </div>
+              <div class="carousel-item">
+              <img src="images/IMG-20250922-WA0215.jpg" class="d-block w-100 carousel-img" style=" height:100vh; object-fit:contain " alt="Chicago">
+              <div class="carousel-caption   bg-dark bg-opacity-50 p-4 rounded">
+                    <h5 class="carousel-title1 fw-bold text-warning">Louis Vuitton</h5>
+                    <p class="section1-p">More than a brand — a timeless symbol of elegance, innovation, and luxury.
+                      From iconic leather goods to refined fragrances, Louis Vuitton embodies sophistication that never fades.</p>
+                    <a href="#" class="btn  btn-outline-warning">Buy Now</a>
+                  </div>
+              </div>
+              <div class="carousel-item">
+              <img src="images/WhatsApp Image 2025-09-22 at 21.50.04_3783bebe.jpg" class="d-block w-100 carousel-img" style=" height:100vh;  object-fit:contain" alt="New York">
+              <div class="carousel-caption  bg-dark bg-opacity-50 p-4 rounded">
+                    <h5 class="carousel-title1 fw-bold text-warning">LA MER</h5>
+                    <p class="section1-p">Where luxury meets transformation.
+                      Infused with the legendary Miracle Broth™, La Mer brings the power of the sea to your skin — restoring, renewing, and revealing timeless radiance.</p>
+                    <a href="#" class="btn  btn-outline-warning">Buy Now</a>
+                  </div>
+              </div>
+              <div class="carousel-item">
+              <img src="images/IMG-20250922-WA0255.jpg" class="d-block w-100 carousel-img" style=" height:100vh;  object-fit:contain" alt="New York">
+              <div class="carousel-caption   bg-dark bg-opacity-50 p-4 rounded">
+                    <h5 class="carousel-title1 fw-bold text-warning">EHO NARD</h5>
+                    <p class="section1-p">A fragrance crafted for those who dare to stand out.
+                      With a bold fusion of elegant florals and deep oriental notes, EHONARD captures the essence of timeless luxury.
+                      Long-lasting, sophisticated, and irresistibly unique — it’s not just a scent, it’s a signature.</p>
+                    <a href="#" class="btn  btn-outline-warning">Buy Now</a>
+
+                  </div>
+              </div>
+          </div>
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev " type="button" data-bs-target="#demo" data-bs-slide="prev" >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next " type="button" data-bs-target="#demo" data-bs-slide="next" >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      <!-- HTML (حافظي على FontAwesome محمّل في <head>) -->
+      <div class="section1-boxicons position-fixed top-50 end-0 translate-middle-y d-flex flex-column gap-0 me-1">
+          <a href="#" class="section1-icons btn btn-outline">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="#" class="section1-icons btn btn-outline">
+            <i class="fab fa-facebook-messenger"></i>
+          </a>
+          <a href="#" class="section1-icons btn btn-outline">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="section1-icons btn btn-outline">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <a href="#" class="section1-icons btn btn-outline">
+            <i class="fab fa-youtube-square"></i>
+          </a>
+          <a href="#" class="section1-icons btn btn-outline">
+            <i class="fab fa-whatsapp-square"></i>
+          </a>
+       </div>
+      </section><!-- /section1 -->
+      <section class="section2">
+          <div class="mt-4 p-5 bg-dark text-white w-100 rounded">
+            <h1 class="text text-warning" style=' font-family: "Cormorant Garamond", serif;' >Discover Timeless Fragrance</h1> 
+            <p style='font-family: "Raleway", sans-serif;'>Indulge in the art of luxury with our signature perfumes.  
+              Each scent is carefully crafted with elegant notes that embody sophistication, passion, and charm.  
+              A fragrance that doesn’t just stay on your skin,it becomes part of your story.</p> 
+              <a href="#"><button type="button" class="btn btn-outline-warning btn-lg"style='font-family: "Raleway", sans-serif;' >Shop Now</button></a>
+         </div><hr><!-- /mt-4 -->
+         <div class="container-fluid p-5   text-center " style='background-color:rgba(222, 184, 135, 0.565);font-family: "Forum", serif'>
+          <h1 style="color:black;font-weight:bold" >✨ The Essence of Best-Selling Luxury ✨</h1>
+         </div><!-- /container-fluid --> <hr>
+         <!-- Accordion (Bootstrap recommended structure) -->
+          <div class="accordion" id="myAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header " id="headingOne">
+                <button class="accordion-button collapsed text-warning" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="false" aria-controls="collapseOne"
+                        style="background:rgba(0, 0, 0, 0.8); font-family: 'Raleway', sans-serif;">Runaway Gold
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#myAccordion">
+                <div class="accordion-body bg-light p-3">
+                  <hr>
+                A timeless fragrance that radiates luxury and confidence. With its warm golden notes of amber and vanilla, Runaway Gold leaves a trail of elegance that lasts all day. Perfect for those who love to shine with sophistication.                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header " id="headingTwo">
+                <button class="accordion-button collapsed text-warning" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo"
+                        style="background: rgba(0, 0, 0, 0.8); font-family: 'Raleway', sans-serif;">
+                  Ehonard
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#myAccordion">
+                <div class="accordion-body bg-light p-3">
+                  <hr>
+                  Bold yet refined, Ehonard blends elegant florals with deep oriental notes. It’s not just a fragrance, but a statement of individuality and timeless charm, crafted for those who dare to stand out.                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header  " id="headingThree">
+                <button class="accordion-button collapsed text-warning" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree"
+                        style="background: rgba(0, 0, 0, 0.8); font-family: 'Raleway', sans-serif;">
+                  Louis Vuitton Signature
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#myAccordion">
+                <div class="accordion-body bg-light p-3">
+                  <hr>
+                  An iconic scent that embodies French elegance and modern luxury. Louis Vuitton Signature combines fresh citrus with smooth leather undertones, creating a sophisticated fragrance loved across generations.                </div>
+              </div>
+            </div>
+          </div>
+      </section><!-- /section2 -->
+     <section class="section3">
+  <div class="container-fluid p-4 mt-5 text-center" style='background-color:rgba(222, 184, 135, 0.565);font-family: "Forum", serif'>
+    <h1 style="color:black;">✨ The Art Of Perfume ✨</h1>
+  </div>
+
+  <div class="container-fluid p-3" style='background-color:rgba(213, 196, 174, 0.565);font-family: "Poppins", sans-serif;'>
+    <h3 class="text-studle-warning">To Discover The Essence <span class="text-white">Press Here</span></h3>
+
+    <!-- زرار + بوكس -->
+    <div class="btn-wrap">
+      <button class="orderBtn btn btn-warning mt-1 p-3" 
+              data-bs-toggle="modal" 
+              data-bs-target="#modal1">
+        Order Now
+      </button>
+
+      <div class="orderBox">Ordered</div>
+    </div>
+
+    <!-- المودال -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content bg-light" style='font-family: "Raleway", sans-serif;'>
+          <div class="modal-header">
+            <h5 class="modal-title">Dior Perfumes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            Your Order Sent Successfully
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input -->
+    <div class="section3-typebox container-fluid">
+      <textarea class="form-control p-5 mt-2 rounded" rows="4">Type your kind of perfume you want to order:</textarea>
+    </div>
+  </div>
+  <!-- /////////////////////////////////////////// -->
+  <div class="container-fluid p-4 mt-5 text-center" style='background-color:rgba(222, 184, 135, 0.565);font-family: "Forum", serif'>
+    <h1 style="color:black;">✨ A Touch Of Luxury ✨</h1>
+  </div>
+
+  <div class="container-fluid p-3" style='background-color:rgba(213, 196, 174, 0.565);font-family: "Poppins", sans-serif;'>
+    <h3 class="text-studle-warning">If you wanna have A luxury perfume  <span class="text-white">Press Here</span></h3>
+
+    <!-- زرار + بوكس -->
+    <div class="btn-wrap">
+      <button class="orderBtn btn btn-warning mt-1 p-3" 
+              data-bs-toggle="modal" 
+              data-bs-target="#modal1">
+        shop Now
+      </button>
+
+      <div class="orderBox">done</div>
+    </div>
+
+    <!-- المودال -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content bg-light" style='font-family: "Raleway", sans-serif;'>
+          <div class="modal-header">
+            <h5 class="modal-title">Dior Perfumes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            This process done Successfully
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input -->
+    <div class="section3-typebox container-fluid">
+      <textarea class="form-control p-5 mt-2 rounded" rows="4">Type your kind of perfume you want to shop now:</textarea>
+    </div>
+  </div>
+  <!-- ///////////////////////////////////////////////// -->
+      
+     <section class="section3">
+  <div class="container-fluid p-4 mt-5 text-center" style='background-color:rgba(222, 184, 135, 0.565);font-family: "Forum", serif'>
+    <h1 style="color:black;">✨ Your Signature Scent ✨</h1>
+  </div>
+
+  <div class="container-fluid p-3" style='background-color:rgba(213, 196, 174, 0.565);font-family: "Poppins", sans-serif;'>
+    <h3 class="text-studle-warning">If you Want to know your favourite scent <span class="text-white">Press Here</span></h3>
+
+    <!-- زرار + بوكس -->
+    <div class="btn-wrap">
+      <button class="orderBtn btn btn-warning mt-1 p-3" 
+              data-bs-toggle="modal" 
+              data-bs-target="#modal1">
+        Explore Now
+      </button>
+
+      <div class="orderBox">explored</div>
+    </div>
+
+    <!-- المودال -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content bg-light" style='font-family: "Raleway", sans-serif;'>
+          <div class="modal-header">
+            <h5 class="modal-title">Dior Perfumes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            Your Request Sent Successfully
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input -->
+    <div class="section3-typebox container-fluid">
+      <textarea class="form-control p-5 mt-2 rounded" rows="4">Type your kind of perfume you want to know its scent:</textarea>
+    </div>
+  </div>
+      </section><!-- /section3 -->
+      <!-- //////////////////////////////////////////////// -->
+       <div class="img-container1">
+        <div class="img-section4-overlay"></div>
+       </div>
+      <section class="section4">
+        <div class="container-fluid p-4 mt-5 text-center" style='background-color:rgba(222, 184, 135, 0.565);font-family: "Forum", serif'>
+    <h1 style="color:black;">✨ Best-Selling Perfumes" ✨</h1>
+  </div>
+
+      <div class="container ">
+        <div class=" row g-4 justify-content-center mt-5 p-5">
+            <!-- الصف الأول (3 كروت) -->
+            <div class="row-parent col-md-4">
+              <div class="col-child card  shadow">
+                <img src="images/WhatsApp Image 2025-09-22 at 21.04.12_52218cde.jpg" class="card-img-top fixed-img  mx-auto my-1 " alt="Item 1">
+                <div class="card-body d-flex flex-column p-5"style='font-family: "Raleway", sans-serif;'>
+                  <h5 class="card-title fw-1000"style='font-family: "Forum", serif ;font-weight:bold'  >DIEGGO</h5>
+                  <div class="mt-auto text-end">
+                    <a href="#" class="btn btn-warning my-3">Shop Now</a>
+                  </div>
+                  <p class="card-text">A fragrance that tells your unique story, leaving memories wherever you go.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+          <div class="row-parent col-md-4">
+              <div class="col-child card h-100 shadow">
+                <img src="images/WhatsApp Image 2025-09-22 at 21.04.12_090f7abb.jpg" class="card-img-top fixed-img mx-auto my-1" alt="Item 2">
+                        <div class="card-body d-flex flex-column p-5"style='font-family: "Raleway", sans-serif;'>
+
+                  <h5 class="card-title fw-1000"style='font-family: "Forum", serif ;font-weight:bold' >LOREAL PARIS</h5>
+                  <div class="mt-auto text-end">
+                    <a href="#" class="btn btn-warning my-3">Shop Now</a>
+                  </div>
+                  <p class="card-text">Elegance captured in every drop, designed to reflect your true beauty.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+          <div class="row-parent col-md-4">
+              <div class="col-child card h-100 shadow">
+                <img src="images/IMG-20250922-WA0253.jpg" class="card-img-top fixed-img mx-auto my-1" alt="Item 3">
+                        <div class="card-body d-flex flex-column p-5"style='font-family: "Raleway", sans-serif;'>
+
+                  <h5 class="card-title fw-1000"style='font-family: "Forum", serif ;font-weight:bold' >DAISY</h5>
+                  <div class="mt-auto text-end">
+                    <a href="#" class="btn btn-warning my-3">Shop Now</a>
+                  </div>
+                  <p class="card-text">The scent of pure confidence, giving you strength with every step.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- الصف التاني (3 كروت) -->
+          <div class="row-parent col-md-4">
+              <div class="col-child card h-100 shadow">
+                <img src="images/WhatsApp Image 2025-09-22 at 21.04.12_f4fc5de3.jpg" class="card-img-top fixed-img mx-auto my-1" alt="Item 4">
+                        <div class="card-body d-flex flex-column p-5"style='font-family: "Raleway", sans-serif;'>
+
+                  <h5 class="card-title fw-1000"style='font-family: "Forum", serif ;font-weight:bold' > ELLE SAAB</h5>
+                  <div class="mt-auto text-end">
+                    <a href="#" class="btn btn-warning my-3">Shop Now</a>
+                  </div>
+                  <p class="card-text">Timeless beauty sealed in a bottle, made to last beyond moments.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+          <div class="row-parent col-md-4">
+              <div class="col-child card h-100 shadow">
+                <img src="images/IMG-20250922-WA0211.jpg" class="card-img-top fixed-img mx-auto my-1" alt="Item 5">
+                        <div class="card-body d-flex flex-column p-5"style='font-family: "Raleway", sans-serif;'>
+
+                  <h5 class="card-title fw-1000"style='font-family: "Forum", serif ;font-weight:bold' >INTENSE SAUVAGE</h5>
+                  <div class="mt-auto text-end">
+                    <a href="#" class="btn btn-warning my-3">Shop Now</a>
+                  </div>
+                  <p class="card-text">Whispers of luxury that stay with you, delicate yet unforgettable.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+          <div class="row-parent col-md-4">
+              <div class="col-child card h-100 shadow">
+                <img src="images/WhatsApp Image 2025-09-22 at 21.04.10_4831a033.jpg" class="card-img-top fixed-img mx-auto my-1" alt="Item 6">
+                        <div class="card-body d-flex flex-column p-5"style='font-family: "Raleway", sans-serif;'>
+                  <h5 class="card-title fw-1000"style='font-family: "Forum", serif ;font-weight:bold' >TENDER</h5>
+                  <div class="mt-auto text-end">
+                    <a href="#" class="btn btn-warning my-3">Shop Now</a>
+                  </div>
+                  <p class="card-text">A touch of charm that lingers all day, surrounding you with warmth.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- الصف التالت (2 كروت) -->
+          <div class="row-parent col-md-4 ">
+              <div class="col-child card h-100  shadow">
+                <img src="images/WhatsApp Image 2025-09-22 at 21.04.11_68cfea0d.jpg" class="card-img-top fixed-img mx-auto my-1" alt="Item 7">
+                        <div class="card-body d-flex flex-column p-5"style='font-family: "Raleway", sans-serif;'>
+
+                  <h5 class="card-title"style='font-family: "Forum", serif ;font-weight:bold' >Ghabrielle-Chanel</h5>
+                  <div class="mt-auto text-end">
+                    <a href="#" class="btn btn-warning my-2">Shop Now</a>
+                  </div>
+                  <p class="card-text">Your signature, your fragrance — a reflection of who you truly are.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+          <div class="row-parent col-md-4">
+              <div class="col-child card h-100 shadow ">
+                <img src="images/WhatsApp Image 2025-09-22 at 21.04.11_3baf9a7f.jpg" class="card-img-top fixed-img mx-auto my-1" alt="Item 8">
+                        <div class="card-body d-flex flex-column p-5"style='font-family: "Raleway", sans-serif;'>
+
+                  <h5 class="card-title fw-1000"style='font-family: "Forum", serif ;font-weight:bold' >RE-Nutriv</h5>
+                  <div class="mt-auto text-end">
+                    <a href="#" class="btn btn-warning my-3">Shop Now</a>
+                  </div>
+                  <p class="card-text">Where passion meets perfection, creating a scent that inspires.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </section><!-- /section4 -->
+      <div class="img-container1">
+        <div class="img-section5-overlay">
+        </div>
+       </div>
+      <section class="section5">
+          <div class="container-fluid p-4  text-center" style='background-color:rgba(222, 184, 135, 0.565);font-family: "Forum", serif;margin:120px 0px'>
+            <h1 style="color:black;">✨ .. Thanks For .. ✨</h1>
+          </div>
+        <div class="container my-5 ">
+
+  <div class="row g-4 justify-content-center " style='font-family: "Poppins", sans-serif;'>
+
+    <!-- الكارت 1 -->
+      <div class="col-md-3 col-sm-6 col-10 d-flex justify-content-center mb-4">
+      <div class="thanks-card shadow">
+        <!-- الخلفية -->
+        <img src="images/WhatsApp Image 2025-09-27 at 10.18.18_eec4860c copy.jpg" class="bg-img " alt="background">
+
+        <!-- النص الأول فوق -->
+        <div class="top-text  text-start">
+          <h6 class="h61 fw-bold">All Thanks And Appreciation</h6>
+          <small class="small1"><i class="far fa-clock"></i></i> Septamber 27, 2025</small>
+        </div>
+
+        <!-- المحتوى -->
+        <div class="overlay-content text-start">
+          <img src="images/WhatsApp Image 2025-09-27 at 10.18.18_eec4860c copy.jpg" class="profile-img" alt="profile">
+          <h6 class="mb-0">Laila Hassan</h6>
+          <small>Fragrance Consultant</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- الكارت 2 -->
+  <div class="col-md-3 col-sm-6 col-10 d-flex justify-content-center mb-4">
+    <div class="thanks-card shadow">
+      <img src="images/WhatsApp Image 2025-09-27 at 10.19.28_8f12f770.jpg" class="bg-img" alt="background">
+
+      <div class="top-text text-start">
+        <h6 class="h61 fw-bold">All Thanks And Appreciation</h6>
+        <small class="small1"><i class="far fa-clock"></i> September 27, 2025</small>
+      </div>
+
+      <div class="overlay-content text-start">
+        <img src="images/WhatsApp Image 2025-09-27 at 10.19.28_8f12f770.jpg" class="profile-img" alt="profile">
+        <h6 class="mb-0">Maya Karim</h6>
+        <small>Sales Specialist</small>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- الكارت 3 -->
+    <div class="col-md-3 col-sm-6 col-10 d-flex justify-content-center mb-4">
+      <div class="thanks-card shadow">
+        <img src="images/WhatsApp Image 2025-09-27 at 10.18.18_7ba89059.jpg" class="bg-img" alt="background">
+
+        <div class="top-text text-start">
+          <h6 class="h61 fw-bold">All Thanks And Appreciation</h6>
+          <small class="small1"><i class="far fa-clock"></i></i> Septamber 27, 2025</small>
+        </div>
+
+        <div class="overlay-content text-start">
+          <img src="images/WhatsApp Image 2025-09-27 at 10.18.18_7ba89059.jpg" class="profile-img" alt="profile">
+          <h6 class="mb-0">Nour Adel</h6>
+          <small>Brand Manager</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      </section><!-- section5 -->
+      <section class="section6">
+         <div class="container-fluid p-4 mt-5 text-center" style='font-family: "Forum", serif'>
+            <h1 style="color:black;">✨ Fregrance News ✨</h1>
+          </div>
+        <div class="row justify-content-center p-5">
+            <div class="card-container col-md-10 bg-light text-white reverse" >
+                  <div class="text-box">
+                    <h2>Podcast Title</h2>
+                    <small class="text-secondary"><i class="far fa-clock"></i></i> Septamber 27, 2025</small>
+                    <div class="progress my-2" style="height:5px; width:100px;">
+                      <div class="progress-bar bg-warning" style="width:70%; "></div>
+                    </div>
+                    <p>
+                      In our perfumes, passion doesn't stop at elegance alone; it extends to include boldness and renewal in every detail of L’interdit. We are always keen to offer something new for lovers of distinctive fragrances — a scent that dares you to embrace your true essence with timeless sophistication.
+                   <div class="text-start">
+                    <button class="btn btn-warning mt-5 opacity-75"><i class="fas fa-microphone"></i> Podcast</button>
+                    <button class="btn btn-warning mt-5 opacity-75"><i class="far fa-clock"></i> 50mins</button>
+                    <button class="btn btn-warning mt-5 opacity-75"><i class="fas fa-play"></i> Play Tapisode</button>
+                  </div>
+                    </p>
+                  </div>
+                  <div class="image-box text-end ">
+                    <img src="images/WhatsApp Image 2025-09-27 at 14.34.31_993eccab.jpg"style='width:500px;height:400px ' alt="Pizza">
+            </div>
+          </div>
+        </div>
+        <!-- /////////////////////////////////////////////////////////// -->
+        <div class="row justify-content-center p-5">
+            <div class="card-container col-md-10 bg-light text-white">
+                 <div class="image-box2 text-end ">
+                    <img src="images/WhatsApp Image 2025-09-27 at 14.20.09_cb3de172.jpg"style='width:500px;height:400px ' alt="Pizza">
+                  </div>
+                  <div class="text-box">
+                    <h2>Podcast Title</h2>
+                    <small class="text-secondary"><i class="far fa-clock"></i></i> Septamber 27, 2025</small>
+                    <div class="progress my-2" style="height:5px; width:100px;">
+                      <div class="progress-bar bg-warning" style="width:70%; "></div>
+                    </div>
+                    <p>
+                     In our world of perfumes, passion doesn't stop at luxury alone; it extends to include uniqueness and authenticity in every detail of Taj. We are always devoted to presenting something new for fragrance lovers — a blend that reflects royalty, prestige, and unforgettable presence.
+                       <div class="text-start mt-2"></div>
+                     <button class="btn btn-warning mt-5 opacity-75"><i class="fas fa-microphone"></i> Podcast</button>
+                      <button class="btn btn-warning mt-5 opacity-75"><i class="far fa-clock"></i> 50mins</button>
+                    <button class="btn btn-warning mt-5 opacity-75"><i class="fas fa-play"></i> Play Tapisode</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center p-5">
+            <div class="card-container col-sm-10 bg-light text-white reverse" >
+                  <div class="text-box">
+                    <h2>Donginibi </h2>
+                    <small class="text-secondary"><i class="far fa-clock"></i></i> Septamber 27, 2025</small>
+                    <div class="progress my-2" style="height:5px; width:100px;">
+                      <div class="progress-bar bg-warning" style="width:70%; "></div>
+                    </div>
+                    <p>
+                     With DONGINIBI, passion doesn't stop at beauty alone; it extends to innovation and depth in every note. We always strive to provide something new for lovers of distinctive aromas — a fragrance that connects tradition with modernity, creating an aura of harmony and refinement.
+                    </p>
+                     <div class="text-start mt-2">
+                      <button class="btn btn-warning mt-5 opacity-75"><i class="fas fa-microphone"></i> Podcast</button>
+                     <button class="btn btn-warning mt-5 opacity-75"><i class="far fa-clock"></i> 50mins</button>
+                    <button class="btn btn-warning mt-5 opacity-75"><i class="fas fa-play"></i> Play Tapisode</button>
+                    </div>
+                  </div>
+                  <div class="image-box text-end ">
+                    <img src="images/WhatsApp Image 2025-09-27 at 14.20.09_14351443.jpg"style='width:500px;height:400px ' alt="Pizza">
+                  </div>
+            </div>
+          </div>
+        </div>
+        <!-- /////////////////////////////////////////////////////////// -->
+        <div class="row justify-content-center p-5">
+            <div class="card-container col-sm-10 bg-light text-white">
+                 <div class="image-box2 text-end ">
+                    <img src="images/WhatsApp Image 2025-09-27 at 14.24.11_d9c87b92.jpg"style='width:500px;height:400px ' alt="Pizza">
+                  </div>
+                  <div class="text-box">
+                    <h2>Podcast Title</h2>
+                    <small class="text-secondary"><i class="far fa-clock"></i></i> Septamber 27, 2025</small>
+                    <div class="progress my-2" style="height:5px; width:100px;">
+                      <div class="progress-bar bg-warning" style="width:70%; "></div>
+                    </div>
+                    <p>
+                      In our perfumes, passion doesn’t stop at allure alone; it extends to embrace mystery and elegance in every aspect of Jasmin Noir. We are committed to offering something new for fragrance lovers — a scent that embodies sensuality, charm, and timeless femininity.
+                    </p>
+                    <div class="text-start">
+                      <button class="btn btn-warning mt-5 opacity-75"><i class="fas fa-microphone"></i> Podcast</button>
+                      <button class="btn btn-warning mt-5 opacity-75"><i class="far fa-clock"></i> 50mins</button>
+                    <button class="btn btn-warning mt-5 opacity-75"><i class="fas fa-play"></i> Play Tapisode</button>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- section5 -->
+      <section class="section6">
+        <div class="container my-5">
+          <div class="row justify-content-center g-4 text-center">
+
+            <!-- الكارد 1 -->
+            <div class="col-auto bg-white p-3 rounded shadow m-3">
+              <h4>Subscribe Now</h4>
+              <img src="images/IMG-20250925-WA0017.jpg" style="width:200px;height:200px;" alt="background">
+              <br>
+              <a href="#" class="mt-2 d-block">Go To Link</a>
+            </div>
+
+            <!-- الكارد 2 -->
+            <div class="col-auto bg-white p-3 rounded shadow m-3">
+              <h4>Subscribe Now</h4>
+              <img src="images/IMG-20250925-WA0016.jpg" style="width:200px;height:200px;" alt="background">
+              <br>
+              <a href="#" class="mt-2 d-block">Go To Link</a>
+            </div>
+
+            <!-- الكارد 3 -->
+            <div class="col-auto bg-white p-3 rounded shadow m-3">
+              <h4>Subscribe Now</h4>
+              <img src="images/IMG-20250925-WA0015.jpg" style="width:200px;height:200px;" alt="background">
+              <br>
+              <a href="#" class="mt-2 d-block">Go To Link</a>
+            </div>
+
+            <!-- الكارد 4 -->
+            <div class="col-auto bg-white p-3 rounded shadow m-3">
+              <h4>Subscribe Now</h4>
+              <img src="images/IMG-20250925-WA0014.jpg" style="width:200px;height:200px;" alt="background">
+              <br>
+              <a href="#" class="mt-2 d-block">Go To Link</a>
+            </div>
+          </div>
+        </div>
+      </section><!-- section6 -->
+    </main><!-- main -->
+   
+     <!-- Footer -->
+<footer class="bg-dark text-light pt-5 p-5">
+  <div class="container">
+    <div class="row text-center text-md-center border-top justify-content-center">
+
+      <!-- العمود الأول -->
+      <div class="footer-col col-md-4 my-5">
+        <div class="footer-header d-flex align-items-center mb-3">
+          <img src="images/WhatsApp Image 2025-09-22 at 22.31.22_6057566d.jpg" 
+               alt="" class="logo-img2 me-2" style="width:130px; height:100px;">
+          <h5 class=" footer-header-t1 mb-0">Good Brand</h5>
+        </div>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-light">Tel : 000-000-000</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Address : EGYPT</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Fax : 000-000-000</a></li>
+        </ul>
+      </div>
+
+      <!-- العمود الثاني -->
+      <div class="footer-col col-md-4 my-5">
+        <div class="footer-header d-flex align-items-center mb-3">
+          <img src="images/WhatsApp Image 2025-09-22 at 22.31.22_6057566d.jpg" 
+               alt="" class="logo-img2 me-2" style="width:130px; height:100px;">
+          <h5 class="footer-header-t1 mb-0">Important Links</h5>
+        </div>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-warning">Visit Us</a></li>
+          <li><a href="#" class="text-decoration-none text-warning">Take A Look</a></li>
+          <li><a href="#" class="text-decoration-none text-warning">Your Health Is More Important</a></li>
+        </ul>
+      </div>
+
+      <!-- العمود الثالث -->
+      <div class="footer-col col-md-4 my-5">
+        <div class=" footer-header d-flex align-items-center mb-3">
+          <img src="images/WhatsApp Image 2025-09-22 at 22.31.22_6057566d.jpg" 
+               alt="" class="logo-img2 me-2" style="width:130px; height:100px;">
+          <h5 class="footer-header-t1 mb-0">Brand Vision</h5>
+        </div>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-light">Services For All</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Provide Best Services</a></li>
+          <li><a href="#" class="text-decoration-none text-light">You Will Be Better Than Before</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- الحقوق -->
+    <div class="text-center mt-2 border-top pt-3 opacity-50">
+      <p class="mb-0">© 2025 FoodExpress. All Rights Reserved.  
+        <span class="text-warning">Designed By MALAK WAHEED TAHA</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- js -->
+    <script src="js/script.js"></script>
+ </body>
+</html> 

@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  height: 7000px;
+  background-color: bisque;
+     
+      
+      cursor: pointer;
+}
+.ripple {
+      position: absolute;
+      border: 1px solid rgb(0, 0, 0);   
+      border-radius: 50%;
+      transform: scale(0);
+      animation: rippleAnim 0.4s linear forwards;
+      pointer-events: none;
+      z-index: 9000;
+    } 
+
+    @keyframes rippleAnim {
+      to {
+        transform: scale(2);
+        opacity: 0.5;
+      }
+    } */
+
+.navbar-brand{
+  font-family: "Great Vibes", cursive;
+    /* font-family: "Cormorant Garamond", serif; */
+  font-size: 40px;
+  font-weight: bold;
+}
+#x1{
+    background-color: oklch(0% 0 0);
+}
+header .navbar{
+    background-color: burlywood;
+}
+.logo-img{
+    width:80px ;
+    height:70px;
+    border-radius:50% ;
+}
+.my-input::placeholder {
+  color: rgba(187, 185, 185, 0.284);
+}
+.my-input{
+    border: 1.9px solid rgb(230, 202, 18);
+    background-color: white;
+}
+.navbar-nav{
+       font-family: "Poppins", sans-serif;
+      font-size: 20px;
+      
+      
+}
+.hover-border{
+  /* padding: 20PX; */
+  /* transition: 1s; */
+  border:1.6px solid  burlywood;
+
+
+}
+.hover-border:hover {
+  border:1.6px solid #020202;
+  /* transition: 1s; */
+
+}
+.modal-btn1{
+     background-color: hsl(0, 0%, 1%);
+    color: rgb(228, 178, 111); 
+}
+.modal-btn1:hover{
+    border:1.9px solid black;
+    color: #020202;
+}
+ 
+.my-input:focus{
+    border:1.9px solid #030303;
+    box-shadow: none;
+}
+/* غيّر خلفية القائمة */
+.navbar .nav-item .dropdown-menu {
+  background-color: #111 ;
+}
+/*  لون النص */
+.navbar .nav-item .dropdown-menu .dropdown-item {
+  color:burlywood ;
+}
+/*hover */
+ .navbar .nav-item .dropdown-menu .dropdown-item:hover{
+  background-color:black ;
+  color: burlywood;
+}
+/* active */
+.navbar .nav-item .dropdown-menu .dropdown-item.active,
+.navbar .nav-item .dropdown-menu .dropdown-item:active {
+  background-color:#ffc107;
+  color:#000 ;
+}
+.modal-header .xbtn1{
+    box-shadow: none;
+}
+.modal-body .modalbox .form-control ,.modal-body .modalbox .form-check-input{
+    /* background-color: black; */
+    box-shadow: none;
+    /* border: 1.9px solid #ffc107; */
+    /* color: white; */
+}
+.form-control::placeholder{
+    color: rgba(12, 12, 12, 0.454);
+}
+.modal-body .modalbox .form-label,.modal-body .modalbox .form-check-label{
+    color: rgb(0, 0, 0);
+}
+.btn2{
+    border: 1.9px solid #745806c5;
+}
+
+/* //////////////////////////////////////// */
+
+.section1-boxicons .section1-icons:first-child i{
+  font-size: 40px;
+}
+.section1-boxicons {
+      z-index: 20;
+    }
+    .section1-boxicons .section1-icons {
+      height: 48px;
+      padding: 6px;
+    }
+    .section1-boxicons .section1-icons i {
+      font-size: 40px;
+      color: rgb(216, 166, 101);
+      opacity: 0.6;
+    }
+    .section1-boxicons .section1-icons:hover i {
+  opacity: 0.9;
+  transform: scale(0.96);
+  color: #555;
+}
+.section1-p{
+      font-family: "Raleway", sans-serif;
+      color: rgb(215, 211, 211);
+} 
+.carousel-title1{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+}
+/* ///////////////////// */
+.list-group-item {
+  border-width: 1px !important; /* سماكة الخط */
+  border-color: #01010136;
+   /* لون غامق شوية */
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5); /* Shadow بلون أصفر شبه warning */
+}
+/* ////////////////////////////////// */
+  .btn-wrap { display: inline-block; }
+  .section3 .section3-typebox
+  {
+    font-family: "Raleway", sans-serif;
+  }
+.section3 .section3-typebox:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5); /* Shadow بلون أصفر شبه warning */
+}
+.orderBox {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+   transform: translateY(-10px);
+   /* ظ padding: 0 10px; padding صغير افتراضي */
+
+  /* display: none; */
+  min-width: 100px;
+  margin-top: 8px;
+  margin-left: 110px;
+  background: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius:50px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+.orderBox.visible {
+  /* display: block; */
+  max-height: 200px; /* حسب حجم المحتوى */
+  opacity: 1;
+   transform: translateY(0);
+  /* padding: 10px; */
+}
+/* ///////////////////////////// */
+.img-container1{
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+ .img-section4-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/WhatsApp\ Image\ 2025-09-22\ at\ 21.04.12_50ee93cd.jpg);
+  background-color:rgba(0, 0, 0, 0.842);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+ .img-section5-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/WhatsApp\ Image\ 2025-09-26\ at\ 23.24.10_16c9f80c.jpg);
+  background-color:rgba(0, 0, 0, 0.842);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+/* ///////////////// */
+
+.fixed-img {
+  width: 98%;
+  height: 350px;       /* كل الصور نفس الارتفاع */
+  object-fit: cover;   /* يظبط الصورة ويقص الزايد */
+}
+.col-child {
+  /* width: 400px;
+  height: 400px; */
+  position: relative;
+  overflow: hidden; /* مهم عشان أي overlay ما يطلعش برة الكارد */
+  border-radius: 8px; /* الكيرف الأساسي للكارد */
+}
+.col-child::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.383);
+  border-radius: inherit;
+  opacity: 0.5; 
+  transition:0.5s;
+  pointer-events: none;
+}
+
+/* وقت الـ hover */
+.col-child:hover::after {
+  width: 100%;
+  height: 100%;
+  transition:0.5s; /* حركة ناعمة */
+
+  opacity: 0; /* يبان بالتدريج */
+}
+.col-child::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.282);
+  border-radius: inherit;
+  opacity: 0.5; 
+  transition:0.5s;
+  pointer-events: none;
+}
+
+/* وقت الـ hover */
+.col-child:hover::before{
+  width: 100%;
+  height: 100%;
+  transition:0.5s; /* حركة ناعمة */
+
+  opacity: 0.6; /* يبان بالتدريج */
+}
+/* ///////////////////////// */
+.thanks-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      display: inline-block;
+      overflow: hidden;
+      transition: 0.4s;
+    }
+.top-text  {
+  opacity: 0.5;
+  overflow: hidden;
+  display: inline-block;
+  transition: 0.4s;
+
+}
+.thanks-card:hover{
+   transform: scale(0.9);
+}
+.thanks-card:hover  .top-text  {
+  transform: translatey(20px);
+  transition: 0.4s;
+}
+
+    .thanks-card img.bg-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(60%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; /* يخلي الصورة خلف النص */
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 170px;
+      border-radius: 60px; /* الصورة تبقى دائرية */
+      border: 3px solid #fff;
+      object-fit: cover;
+      margin: 20px 0;
+    }
+
+    .top-text {
+      margin-bottom: 20px;
+    }
+/* ////////////////////////////////////// */
+ .card-container {
+      display: flex;
+      max-width: 1500px;
+      max-height: 400px;
+      margin: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .text-box {
+      flex: 1;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    .text-box h2 {
+      margin: 0 0 15px;
+      font-size: 22px;
+      color: #555;
+    }
+    .text-box  small{
+      padding: 50px 0px;
+    }
+    .text-box p {
+      /* line-height: 1.5; */
+      color: #444;
+    }
+    .image-box , .image-box {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+    .image-box  img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      clip-path: polygon(0% 0% , 100% 0,100% 100%,20% 100% );
+      overflow: hidden;
+      transition: 0.4s;
+    }
+    .image-box2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      clip-path: polygon(0% 0% , 100% 0,80% 100%,0% 100% );
+      overflow: hidden;
+      transition: 0.4s;
+    }
+    .image-box2 img:hover , .image-box img:hover{
+      transform: scale(1.07,1.09);
+    }
+   @media (max-width: 768px) {
+  .card-container {
+    flex-direction: column; /* عادي: صورة فوق ونص تحت */
+    max-width: 100%;
+    width: 100%;
+    max-height: unset;
+  }
+
+  .image-box img,
+  .image-box2 img {
+    clip-path: none !important; /* نخلي الصورة مستطيلة */
+    max-width: 100%;
+    height: auto;
+     height: auto;                /* الطول تلقائي */
+    display: block;
+  }
+
+  /* الكروت اللي عايزين العكس (نص فوق والصورة تحت) */
+  .card-container.reverse {
+    flex-direction: column-reverse;
+     width: 100%;   /* النص ياخد عرض الشاشة كله */
+    margin: 20px 0;
+    padding: 15px;
+  }
+
+  .text-box {
+     width: 100%;   /* النص ياخد عرض الشاشة كله */
+    margin: 20px 0;
+    padding: 15px;
+  }
+}
+
+    /* //////////////////////////////// */
+    .col-auto{
+      border:1.6px solid goldenrod ;
+      font-family: "Forum", serif;
+      display: inline-block;
+      overflow: hidden;
+      transition: 0.2s;
+    }
+    .col-auto:hover{
+      transform: scale(1.04,1.04);
+    }
+    .col-auto h4 ,a{
+      color: #a37a00;
+    }
+    /* ///////////////////////// */
+    .logo-img2{
+    width:120px ;
+    height:90px;
+    border-radius:50% ;
+}
+/* على الشاشات الكبيرة: خط تحت الصورة والعنوان */
+/* الشاشات الكبيرة */
+@media (min-width: 768px) {
+  .footer-header {
+    padding: 15px 0px;   /* مسافة تحت الصورة والعنوان */
+    /* margin-bottom: 30px; */
+  }
+
+  .footer-col {
+    position: relative;   /* علشان نرسم الخط جواه */
+  }
+
+  .footer-col::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 150px; /* نزول الخط تحت الصورة + العنوان (عدليه حسب طول صورتك) */
+    height: 0.5px;
+    opacity: 0.7;
+    background-color: #fff;
+  }
+}
+
+/* الشاشات الصغيرة */
+@media (max-width: 767px) {
+  .footer-header {
+    flex-direction: column !important;
+  }
+  .footer-col {
+    border-bottom: 0.5px solid #fff;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  .footer-col:last-child {
+    border-bottom: none;
+  }
+}
+.footer-header-t1{
+  font-size: 30px;
+  font-family: "Forum", serif
+}
+.list-unstyled{
+  margin-top: 30px;
+  font-family: "Raleway", sans-serif;
+  
+}
